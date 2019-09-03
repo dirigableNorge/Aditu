@@ -346,9 +346,30 @@ body {
   background-color: #3cc395;
 }
 
+.goods__title-container {
+
+  background-image: url("../img/background_pattern.jpg");
+  background-repeat: repeat;
+}
+
+.goods__title {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 58px;
+
+  font-family: "BebasNeue", "Arail", serif;
+  font-size: 31px;
+  line-height: 67px;
+  font-weight: 400;
+  color: white;
+}
+
 .goods__list {
-  margin: 0;
-  padding: 0;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 48px;
+  padding-left: 63px;
+  padding-bottom: 26px;
 
   display: flex;
   flex-wrap: wrap;
@@ -356,11 +377,91 @@ body {
   list-style: none;
 }
 
+.goods__item {
+  width: 255px;
+  height: 260px;
+  margin-right: 54px;
+  margin-bottom: 47px;
+
+  border-bottom: 5px solid #3cc395;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.26);
+}
+
+.goods__item .image-container {
+  height: 160px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.goods__name,
+.goods__price {
+  font-family: "BebasNeue", "Arial", serif;
+  font-size: 27px;
+  line-height: 27px;
+  color: #afafaf;
+}
+
+.goods__name {
+  margin: 0;
+  margin-bottom: 5px;
+
+  text-align: center;
+}
+
+.goods .price-container {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods__price {
+  margin: 0;
+  margin-right: 15px;
+
+  line-height: 27px;
+
+  display: inline-block;
+}
+
+.goods__buy-btn {
+  margin: 0;
+  padding: 0 10px;
+
+  display: inline-block;
+
+  font-family: "BebasNeue", "Arial", serif;
+  font-size: 20px;
+  line-height: 34px;
+  color: white;
+
+  border: none;
+  border-radius: 3px;
+  background-color: #3cc395;
+}
+
 .page-footer {
   display: flex;
+
+  background-color: #3cc3b5;
 }
 
 .page-footer__list {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 42px;
+  padding-left: 58px;
+
+  display: flex;
+
+  list-style: none;
+}
+
+.page-footer__item__list {
   margin: 0;
   padding: 0;
 
