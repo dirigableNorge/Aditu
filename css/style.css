@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "BebasNeue";
+  font-style: normal;
+  font-weight: 400;
+  src: local("BebasNeue"),
+  url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
+  url("../fonts/BebasNeue-Regular.woff") format("woff");
+}
+
 a {
   text-decoration: none;
 }
@@ -27,7 +36,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -37,14 +46,169 @@ body {
   background-color: #ffffff;
 }
 
+.page-header__top {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 128px;
+  padding-right: 128px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  padding-top: 21px;
+  padding-bottom: 18px;
+  padding-left: 23px;
+
+  display: block;
+
+  font-size: 0;
+  line-height: normal;
+}
+
+.search__label {
+  position: relative;
+}
+
+.search__field {
+  position: relative;
+
+  width: 435px;
+  height: 33px;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+}
+
+.search__label::after {
+  position: absolute;
+  top: -3px;
+  right: 8px;
+
+  width: 22px;
+  height: 22px;
+
+  content: "";
+
+  background-color: white;
+  background-image: url("../img/search.svg")
+}
+
+.basket {
+  margin-right: 21px;
+}
+
+.basket__link {
+  display: block;
+
+  font-family: "BebasNeue", serif;
+  font-size: 33px;
+  color: #a1a1a1;
+}
+
+.basket__link--image {
+  margin-right: 9px;
+}
+
 .page-header__bottom {
   color: white;
   background-color: #4ccfc1;
 }
 
+.nav {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .nav__list {
   padding: 0;
   margin: 0;
+
+  display: flex;
+
+  list-style: none;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__item a {
+  padding: 0 21px;
+
+  display: block;
+
+  font-family: "BebasNeue", "Arial", serif;
+  font-size: 21px;
+  line-height: 36px;
+  color: white;
+}
+
+.nav__item:not(:last-child)::after {
+  position: absolute;
+  top: 9px;
+  right: -2px;
+
+  width: 2px;
+  height: 18px;
+
+  content: "";
+
+  background-color: white;
+}
+
+.banner__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.banner__item {
+  display: flex;
+}
+
+.banner-controls__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  list-style: none;
+}
+
+.categories {
+  display: flex;
+}
+
+.categories__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  list-style: none;
+}
+
+.goods__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.page-footer {
+  display: flex;
+}
+
+.page-footer__list {
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 }
