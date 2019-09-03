@@ -185,7 +185,7 @@ body {
   display: flex;
 }
 
-.image-container {
+.banner .image-container {
   min-width:438px;
   height: 446px;
   margin-right: 20px;
@@ -270,7 +270,23 @@ body {
 }
 
 .categories {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 44px;
+
   display: flex;
+  justify-content: space-between;
+}
+
+.categories__prev,
+.categories__next {
+  margin: 51px 0;
+  padding: 0;
+
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  background-color: white;
 }
 
 .categories__list {
@@ -280,6 +296,54 @@ body {
   display: flex;
 
   list-style: none;
+}
+
+.categories__item {
+  min-width: 340px;
+
+  display: flex;
+}
+
+.categories__item:not(:last-child) {
+  border-right: 1px solid #e7e7e7;
+}
+
+.categories .image-container {
+  min-width: 200px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories__container {
+  max-width: 100px;
+}
+
+.categories__title {
+  margin-top: 53px;
+  margin-bottom: 19px;
+
+  font-family: "BebasNeue", "Arial", serif;
+  font-size: 27px;
+  line-height: 25px;
+  color: #afafaf;
+}
+
+.categories__link {
+  padding: 0 18px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+
+  display: inline-block;
+
+  font-family: "BebasNeue", "Arial", serif;
+  font-size: 19px;
+  line-height: 19px;
+  color: white;
+
+  border-radius: 3px;
+  background-color: #3cc395;
 }
 
 .goods__list {
