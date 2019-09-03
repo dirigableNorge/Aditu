@@ -7,6 +7,15 @@
   url("../fonts/BebasNeue-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("OpenSans"),
+  url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+  url("../fonts/OpenSans-Regular.woff") format("woff");
+}
+
 a {
   text-decoration: none;
 }
@@ -41,7 +50,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #212327;
+  color: black;
 
   background-color: #ffffff;
 }
@@ -159,8 +168,14 @@ body {
   background-color: white;
 }
 
+.banner {
+  background-image: url("../img/background_pattern.jpg");
+  background-repeat: repeat;
+}
+
 .banner__list {
-  margin: 0;
+  max-width: 1024px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
@@ -170,13 +185,88 @@ body {
   display: flex;
 }
 
+.image-container {
+  min-width:438px;
+  height: 446px;
+  margin-right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__container {
+  max-width: 405px;
+}
+
+.banner__title {
+  margin-top: 82px;
+  margin-bottom: 0;
+
+  font-size: 61px;
+  line-height: 54px;
+  font-weight: 400;
+  color: white;
+}
+
+.banner__description {
+  margin-top: 8px;
+  margin-bottom: 25px;
+
+  font-family: "OpenSans", "Arial", serif;
+  font-size: 17px;
+  line-height: 28px;
+  color: white;
+  text-transform: none;
+}
+
+.banner__button {
+  margin: 0;
+  padding: 0 25px;
+
+  font-family: "BebasNeue", "Arial", serif;
+  font-size: 27px;
+  line-height: 40px;
+  color: white;
+
+  border: 3px solid white;
+  border-radius: 10px;
+  background: none;
+}
+
+.banner-controls {
+  position: relative;
+
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .banner-controls__list {
+  position: absolute;
+  left: 460px;
+  bottom: 27px;
+
   margin: 0;
   padding: 0;
 
   display: flex;
 
   list-style: none;
+}
+
+.banner-controls__button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 5px;
+
+  border: none;
+  border-radius: 4.5px;
+  background-color: white;
+}
+
+.banner-controls__button:disabled {
+  opacity: 0.5;
 }
 
 .categories {
