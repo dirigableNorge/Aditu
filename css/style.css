@@ -446,11 +446,12 @@ body {
 .page-footer {
   display: flex;
 
+  border-bottom: 46px solid #2da89b;
   background-color: #3cc3b5;
 }
 
 .page-footer__list {
-  max-width: 1024px;
+  min-width: 1024px;
   margin: 0 auto;
   padding: 0;
   padding-top: 42px;
@@ -461,9 +462,32 @@ body {
   list-style: none;
 }
 
+.page-footer__item:not(:last-child) {
+  margin-right: 120px;
+}
 .page-footer__item__list {
   margin: 0;
+  margin-bottom: 41px;
   padding: 0;
 
   list-style: none;
+}
+
+.page-footer__header {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-family: "BebasNeue", "Arial", serif;
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 400;
+  color: white;
+}
+
+.page-footer__item__list a {
+  font-family: "OpenSans", "Arial", serif;
+  font-size: 15px;
+  line-height: 27px;
+  text-transform: none;
+  color: white;
 }
